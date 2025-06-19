@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Practice Form</title>
+</head>
+<body>
+    <h2>Automation Practice Form</h2>
+
+    <form onsubmit="return false;">
+        <!-- First Name -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+
+        <!-- Last Name -->
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname"><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Skills -->
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="java" name="skills" value="Java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="selenium" name="skills" value="Selenium">
+        <label for="selenium">Selenium</label><br><br>
+
+        <!-- Country -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Success Message -->
+    <p id="successMsg" style="color: green; display: none;">Form submitted successfully!</p>
+
+    <!-- Script to show success message -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Stop page from refreshing
+            document.getElementById("successMsg").style.display = "block";
+        });
+    </script>
+</body>
+</html>
