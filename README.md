@@ -33,4 +33,13 @@ The script performs the following:
 3. Update the ChromeDriver path in `FormAutomation.java`
 4. Update the local file path in:
    ```java
-   driver.get("file:///your/path/to/form.html");
+   driver.get("file:///C:/Users/Bhargav Naidu/eclipse-workspace/First-Automation/form.html");
+
+   ## 📸 Screenshots
+
+### 📝 Before Automation
+![Before Automation](Before%20Automate.png)
+
+### ✅ After Automation
+![After Automation](After%20Automate.png)
+
